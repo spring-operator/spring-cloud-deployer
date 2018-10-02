@@ -31,6 +31,7 @@ import java.util.Map;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
+import sun.nio.ch.ChannelInputStream;
 
 import org.springframework.cloud.deployer.resource.StubResourceLoader;
 import org.springframework.core.io.AbstractResource;
@@ -143,7 +144,7 @@ public class DelegatingResourceLoaderTests {
 		FileSystemResource cachedResource1 = (FileSystemResource) resourceLoader.getResource("s3://"+ fileName);
 		StringBuilder builder = new StringBuilder();
 		int ch;
-		FileInputStream fileInputStream = (FileInputStream) cachedResource1.getInputStream();
+		ChannelInputStream fileInputStream = (ChannelInputStream) cachedResource1.getInputStream();
 		while ((ch = fileInputStream.read()) != -1) {
 			builder.append((char)ch);
 		}

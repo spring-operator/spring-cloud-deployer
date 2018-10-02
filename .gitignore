@@ -58,3 +58,4 @@ crashlytics-build.properties
 fabric.properties
 
 .DS_Store
+pom.xml.versionsBackup
