@@ -58,7 +58,7 @@ import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
 /**
- * Resolves a {@link MavenResource} using <a href="http://www.eclipse.org/aether/>aether</a> to
+ * Resolves a {@link MavenResource} using <a href="https://www.eclipse.org/aether/>aether</a> to
  * locate the artifact (uber jar) in a local Maven repository, downloading the latest update from a
  * remote repository if necessary.
  *
