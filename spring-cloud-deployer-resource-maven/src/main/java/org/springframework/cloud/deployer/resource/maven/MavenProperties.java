@@ -218,7 +218,7 @@ public class MavenProperties {
 	public static class RemoteRepository {
 
 		/**
-		 * URL of the remote maven repository. E.g. http://my.repo.com
+		 * URL of the remote maven repository. E.g. https://my.repo.com
 		 */
 		private String url;
 
