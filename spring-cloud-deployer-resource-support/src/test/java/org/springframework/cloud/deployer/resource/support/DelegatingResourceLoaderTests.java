@@ -43,7 +43,7 @@ import org.springframework.core.io.ResourceLoader;
  */
 public class DelegatingResourceLoaderTests {
 
-	private final static String HTTP_RESOURCE = "http://repo.spring.io/libs-release-local/org/springframework/spring-core/4.2.5.RELEASE/spring-core-4.2.5.RELEASE.pom";
+	private final static String HTTP_RESOURCE = "https://repo.spring.io/libs-release-local/org/springframework/spring-core/4.2.5.RELEASE/spring-core-4.2.5.RELEASE.pom";
 
 	@Rule
 	public TemporaryFolder folder = new TemporaryFolder();
